@@ -1,1 +1,0 @@
-<h1>Hello good sir, your name is {{= name }}</h1>
