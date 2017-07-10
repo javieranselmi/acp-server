@@ -1,5 +1,5 @@
-let dots = require("dot").process({
-    path: (__dirname + "/templates")
+let dots = require('dot').process({
+    path: (__dirname + '/templates')
 });
 
 const express = require('express');

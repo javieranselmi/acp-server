@@ -1,4 +1,4 @@
-require("babel-register");
+require('babel-register');
 
 const express = require('express');
 const requestLogger = require('./app/middlewares/request-logger');
@@ -8,9 +8,7 @@ const errorHandler = require('./app/middlewares/error-handler');
 const port = 3000;
 const app = express();
 const Routes = require('./app/routes');
-const knex = require('./knex');
 const winston = require('winston');
-
 
 app.use(bodyParser.json({ type: 'application/json' }));
 app.use(requestLogger);

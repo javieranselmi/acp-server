@@ -14,7 +14,7 @@ module.exports = function errorHandler(err, req, res, next) {
         Object.assign(errorToSend, {
             originalError: err.originalError.message,
             originalErrorStack: err.originalError.stack
-        })
+        });
     }
 
     res.status(400).json(errorToSend);
