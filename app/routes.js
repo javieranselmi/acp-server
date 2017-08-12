@@ -7,10 +7,6 @@ const Router = express.Router();
 
 // google API
 
-Router.get('/templates/:template', function(req,res) {
-    res.send(dots.hello({
-        name: req.params.template
-    }));
-});
+Router.get('/:keyword', require('./controller/keyword-controller').applyProductFilter);
 
-exports = module.exports = Router;
+module.exports = Router;

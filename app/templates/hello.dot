@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Related Articles</title>
 </head>
 <body>
-<h1>{{=it.name}}</h1>
+<h1>Articulos relacionados!</h1>
+
+{{~it.articles :value:index}}
+<h2>Title: {{=value.name}}!</h2>
+<p>Url: {{=value.url || 'No url'}}!</p>
+<p>ImageUrl: {{=value.imageUrl || 'No image url'}}!</p>
+<hr/>
+{{~}}
+
 </body>
 </html>

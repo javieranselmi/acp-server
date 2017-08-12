@@ -10,12 +10,14 @@
   "author": "Nicolas Medina Sanchez <nicoms91@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "dot": "^1.1.2",
     "elasticsearch": "^13.2.0",
     "eslint": "^4.2.0",
     "express": "^4.15.3",
     "knex": "^0.13.0",
+    "lodash": "^4.17.4",
     "mysql": "^2.13.0",
     "winston": "^2.3.1"
   },
